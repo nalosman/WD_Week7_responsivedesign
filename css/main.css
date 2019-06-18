@@ -1,0 +1,24 @@
+/* start at mobile size and work from there */
+
+
+.box1 {
+  background-color: gold;
+  width: 450px;
+  height: 450px;
+
+}
+
+.box2 {
+  background-color: lightblue;
+  width: 450px;
+  height: 450px;
+}
+
+/* this is a basic media query */
+
+/* change the layout when we're viewing the app on a phone */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .box1 {
+    background-color: pink;}
+}

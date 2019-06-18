@@ -1,0 +1,6 @@
+
+(()  => {
+//stub
+
+console.log('fired!!!');
+})();
