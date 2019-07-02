@@ -8,17 +8,33 @@ main > div {
   display: inline-block;
 }
 
+/* MOBILE FIRST- WRITE THE RULES FOR HANDHELD FIRST */
 .box1 {
   background-color: gold;
-  width: 48%;
+  width: 100%;
   height: 300px;
+  display: block;
 
 }
 
 .box2 {
   background-color: lightblue;
-  width: 48%;
+  width: 100%;
   height: 300px;
+  display: block;
+}
+
+.description {
+  display: none;
+}
+
+.imageContainer {
+  width: 100%;
+  display: inline-block;
+}
+
+img, video, object embed {
+  max-width: 100%;
 }
 
 /* this is a basic media query */
@@ -29,3 +45,37 @@ main > div {
   .box1 {
     background-color: pink;}
 } */
+@media screen and (min-width: 376px) {
+  .box1 {
+    background-color: dodgerblue;
+    display: inline-block;
+    width: 48%;
+  }
+
+  .box2 {
+    background-color: magenta;
+    display: inline-block;
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .box1 {
+    background-color: green;
+    display: inline-block;
+    width: 65%;
+  }
+
+  .box2 {
+    display: none;
+  }
+
+  .description {
+    display: block;
+  }
+
+  .imageContainer {
+    width: 30%;
+    display: inline-block;
+  }
+}
